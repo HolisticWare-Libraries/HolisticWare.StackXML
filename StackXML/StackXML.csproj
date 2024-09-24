@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <DefineConstants>LIBLOG_EXCLUDE_CODE_COVERAGE</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>HolisticWare.StackXml</PackageId>
+        <PackOnBuild>true</PackOnBuild>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IsPackable>true</IsPackable>
+
+        <Owners>HolisticWare, moljac</Owners>
+        <Authors>HolisticWare, moljac</Authors>
+        <Copyright>2024</Copyright>
+        <Description>
+            Package to publish/release StackXml nuget for test purposes
+        </Description>
+        <ProjectUrl>
+            https://github.com/HolisticWare-Libraries/HolisticWare.StackXML
+        </ProjectUrl>
+        <PackageProjectUrl>
+            https://github.com/HolisticWare-Libraries/HolisticWare.StackXML
+        </PackageProjectUrl>
+        <RepositoryUrl>
+            https://github.com/HolisticWare-Libraries/HolisticWare.StackXML
+        </RepositoryUrl>
+        <iconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
+        </iconUrl>
+        <PackageIconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
+        </PackageIconUrl>
+        <license>LICENSE</license>
+        <licenseUrl>
+            https://github.com/HolisticWare/HolisticWare.Core.Versioning/blob/master/LICENSE
+        </licenseUrl>
+        <PackageLicenseUrl>
+            https://github.com/HolisticWare/HolisticWare.Core.Versioning/blob/master/LICENSE
+        </PackageLicenseUrl>
+        <VersionPrefix>0.0.1</VersionPrefix>
+        <!--
+        VersionSuffix - For debugging and local nuget feed
+        -->
+        <VersionSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmm'))</VersionSuffix>
+        <PackageVersion>$(Version)</PackageVersion>
+
+        <!--
+        put the package output into a nuget test folder
+        -->
+        <PackageOutputPath>../../output</PackageOutputPath>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="LibLog" Version="5.0.8">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+    
+
+</Project>
