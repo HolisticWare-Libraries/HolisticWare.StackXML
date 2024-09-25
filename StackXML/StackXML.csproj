@@ -49,13 +49,14 @@
         <!--
         put the package output into a nuget test folder
         -->
-        <PackageOutputPath>../../output</PackageOutputPath>
+        <PackageOutputPath>../output</PackageOutputPath>
         <PackageReadmeFile>README.md</PackageReadmeFile>
 
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\README.md"            Pack="true" PackagePath="\"/>
+        <None Include="..\.github\README.md"    Pack="true" PackagePath="\.github"/>
     </ItemGroup>
     
     <ItemGroup>
