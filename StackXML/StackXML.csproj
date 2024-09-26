@@ -32,12 +32,13 @@
         <PackageIconUrl>
             https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
         </PackageIconUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <license>LICENSE</license>
         <licenseUrl>
-            https://github.com/HolisticWare/HolisticWare.Core.Versioning/blob/master/LICENSE
+            https://github.com/HolisticWare-Libraries/HolisticWare.StackXML/main/LICENSE
         </licenseUrl>
         <PackageLicenseUrl>
-            https://github.com/HolisticWare/HolisticWare.Core.Versioning/blob/master/LICENSE
+            https://github.com/HolisticWare-Libraries/HolisticWare.StackXML/main/LICENSE
         </PackageLicenseUrl>
         <VersionPrefix>0.0.1</VersionPrefix>
         <!--
